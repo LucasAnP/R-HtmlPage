@@ -1,0 +1,84 @@
+---
+title: "Página Html - COVID"
+author: "Lucas Antonio"
+date: "30/06/2020"
+output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+---
+
+Análise de Dados feita com a linguagem de programação R, a partir do minicurso "Análise e Visualização de dados da COVID-19", lecionado pelo professor Marcus Carvalho.
+
+# Brasil
+
+Abaixo estarão os dados referente aos casos do Brasil. Dividindo em diferentes tipos de dados, como "Casos no Brasil", "Óbitos no Brasil", entre outros.
+
+## Casos Acumulados
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/rplot1.png")
+```
+
+## Óbitos Acumulados
+```{r, echo=FALSE}
+knitr::include_graphics("images/semsemana.png")
+```
+
+
+## Óbitos acumulados no Brasil (Dia da Semana)
+É o mesmo gráfico, mas, está detalhado com os dias da semana.
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/comsemana.png")
+```
+
+Anteriormente vimos os dados no final de Junho. Agora, vamos dar uma olhada até o começo de agosto, analisando a diferenciação entre os dois.
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/casosNovosPorDia.png")
+```
+
+# Regiões
+
+## Casos acumulados por região
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/casosporregiao.png")
+```
+
+### Casos acumulados por região (Até começo de Agosto)
+```{r, echo=FALSE}
+knitr::include_graphics("images/casosAcumuladosAgo.png")
+```
+
+### Óbitos por região
+#### Óbitos acumulados por região
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/obitosporregiao.png")
+```
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/obitosPorRegiao2.png")
+```
+
+Como se é possível analisar, os óbitos tiveram um aumento considerável, visto que no final de Junho, o máximo de casos era 50.000. Mas, no começo de Agosto esse número ultrapassa os 100.000
+### Casos Acumulados por seus respectivos estados
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/EstadosCasos.png")
+```
+
+Está Bastante dificil para distinguir os estados, certo?
+Então Vamos tentar dar uma melhorada utilizando escala logarítimica e dividindo os estados.
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/logEscala.png")
+```
+
+Bem melhor. Como podemos ver
+
+# Agradecimentos
+
+Agradeço à Marcus Carvalho (Orientador) pela oportunidade de ter realizado esse trabalho. Por mais que não tive como focar 100% devido a problemas externos (impactando assim neste trabalho), sinto que o curso me deu um bom retorno.
